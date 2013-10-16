@@ -1,0 +1,39 @@
+#timeReading
+{
+   position: fixed;
+   z-index: 10000000005;
+   right: 10px;
+   top: 5%;
+   height: 100px;
+   width: 150px;
+   color: #D8D8D8;
+   background-color: #171717;
+   border: 1px solid #B6A4A4;
+   display:none;
+   -webkit-border-radius: 8px;
+   padding: 0px!important;
+   font-size: 18px!important;
+   font-family:Helvetica, MS Trebuchet, Arial;
+   line-height: 1!important;
+   text-align: left!important;
+   opacity: 0.8;
+   cursor: pointer;
+}
+
+#reading
+{
+    margin: 40px auto;
+    text-align: center ;
+    width: 100px;
+}
+
+#wordNumber
+{
+  margin: 26px 10px 10px 10px;
+  text-align: center;
+}
+#timeToRead
+{
+  margin: 10px;
+  text-align: center;
+}
