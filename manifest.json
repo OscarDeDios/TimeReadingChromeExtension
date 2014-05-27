@@ -1,7 +1,7 @@
 {
   "name": "Reading Time",
   "manifest_version": 2,
-  "version": "1.0.3",
+  "version": "1.0.5",
   "short_name": "Reading Time",
   "icons": { "48": "book.png" },
   "description": "Read smart.  Tells you how long a webpage takes to read.",

@@ -11,9 +11,10 @@
 	function getArticleDiffBot(url,tabid,automatic)
 	{
 		console.log('diff' + url);
-		var param = 'token=b73b08acd6fbcea1dd80e303c5ac18f5&url=' + encodeURIComponent(url);
+		//var param = 'token=a58723ecf9b01639f56769c3ff056d69&url=' + encodeURIComponent(url);
+		var param = '&url=' + encodeURIComponent(url);
 		$.ajax({
-			url: "http://www.diffbot.com/api/article?" + param,
+			url: "http://boilerpipe-web.appspot.com/extract?extractor=ArticleExtractor&output=json&extractImages=" + param,
 			dataType: 'json',
 			error: function(objeto, quepaso, otroobj){
 				// error function
@@ -21,7 +22,8 @@
 			},
 
 			success: function(answer){
-				var textToRead = answer.title + ' ' + answer.text;
+				//var textToRead = answer.title + ' ' + answer.text;
+				var textToRead = answer.response.content;
 				textToRead = textToRead.replace(/\s/g,' ');
 				var wordNumber = textToRead.split(' ').length;
 				var timeToRead = (wordNumber /  localStorage["speed"]).toFixed(0);
